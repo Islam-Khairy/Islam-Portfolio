@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+  width: 100vw !important;
+}
+
+.font-style {
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
+
+.vertical-timeline {
+  padding: 0 !important;
+}
+
+.particles-section {
+  position: relative;
+  overflow: hidden;
+}
+
+#tsparticles {
+  z-index: -1;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(204, 204, 204, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+} */
+
+.greeting-icon,
+.switch-icon,
+.submit-btn,
+.about-animation,
+.header nav a {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../public/fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+

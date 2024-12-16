@@ -20,7 +20,7 @@ export default function Experience() {
     >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor={theme === 'light' ? '#d1d5db' : 'rgba(255, 255, 255, 0.3)'}>
-        {experiencesData.map((item, index) => (
+        {(experiencesData && Array.isArray(experiencesData) && experiencesData.length > 0) && experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               visible={true}

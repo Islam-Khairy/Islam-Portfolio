@@ -7,7 +7,9 @@ import * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
 import { useTheme } from '@/context/theme-context';
 
-export default function Stars({ count = 1000, radius = 2.5 }) {
+export default function Stars() {
+  const count = 1000
+  const radius = 2.5
   const { theme } = useTheme();
   const ref = useRef<THREE.Points>(null);
 
@@ -42,8 +44,6 @@ export default function Stars({ count = 1000, radius = 2.5 }) {
         >
           <PointMaterial
             transparent
-            // color={`${theme === 'dark' ? '#f9fafb' : ''}`}
-            // color={`${theme === 'dark' ? '#cbd5e1' : '#0ea5e9'}`}
             color={`${theme === 'dark' ? '#8b9cdf' : '#6b7280'}`}
             size={0.005}
             sizeAttenuation={true}

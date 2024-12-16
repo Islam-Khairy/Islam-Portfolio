@@ -44,9 +44,7 @@ export default function About() {
             Greetings! Allow me to introduce myself. My name is Islam Khairy. 👋 I'm a dedicated web
             developer with a passion for crafting exceptional digital experiences. With a solid
             foundation in HTML, CSS, and JavaScript, I thrive on bringing ideas to life through
-            clean, efficient code. My journey into web development began with a curiosity about how
-            websites work and evolved into a deep love for creating user-friendly interfaces and
-            dynamic web applications.
+            clean, efficient code.
             <br /> <br />
             I've refined my skills in front-end technologies like React.js, Next.js, and TypeScript,
             striving to enhance both the visual appeal and functionality of each project I work on.

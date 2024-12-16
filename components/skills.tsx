@@ -6,7 +6,6 @@ import { Icon } from '@iconify/react';
 import SectionHeading from './section-heading';
 import { skillsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
-import CategoryToggleButton from './category-toggle-btn';
 import { useTheme } from '@/context/theme-context';
 import CategoryTabs from './categoryTabs';
 
@@ -54,18 +53,13 @@ export default function Skills() {
       style={{ height: 'auto' }}
     >
       <SectionHeading>My Skills</SectionHeading>
-      {/* <CategoryToggleButton
-        categories={categories}
-        selectedCategory={selectedCategory}
-        onChange={handleCategoryChange}
-      /> */}
       <CategoryTabs
         categories={categories}
         selectedCategory={selectedCategory}
         onChange={handleCategoryChange}
       />
       <div className='skills-container flex flex-wrap justify-center content-start gap-4 mt-12 h-full text-lg'>
-        {filteredSkills.map((skill) => (
+        {(filteredSkills && Array.isArray(filteredSkills) && filteredSkills.length > 0) && filteredSkills.map((skill) => (
           <motion.div
             key={skill.id}
             variants={fadeInAnimationVariants}

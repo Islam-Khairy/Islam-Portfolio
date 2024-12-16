@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Tabs, Tab, Box } from '@mui/material';
+import { Tabs, Tab } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useTheme } from '@/context/theme-context';
 
@@ -52,7 +52,9 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({ categories, selectedCategor
             },
           }}
         >
-          {categories.map((category) => (
+          {(categories &&
+          Array.isArray(categories) &&
+          categories.length > 0) && categories.map((category) => (
             <Tab
               key={category}
               value={category}

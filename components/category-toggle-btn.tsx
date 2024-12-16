@@ -25,7 +25,7 @@ const CategoryToggleButton: React.FC<CategoryToggleButtonProps> = ({
       setOrientation(window.innerWidth <= 767 ? 'vertical' : 'horizontal');
     };
 
-    handleResize(); 
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -49,28 +49,31 @@ const CategoryToggleButton: React.FC<CategoryToggleButtonProps> = ({
         aria-label='Category'
         className='w-[90vw] m-auto'
       >
-        {categories.map((category) => (
-          <ToggleButton
-            key={category}
-            value={category}
-            className={`toggle-btn flex justify-center items-center border border-${
-              theme === 'dark' ? 'gray-700' : 'gray-300 w-full'
-            } rounded-md`}
-            style={{ height: '5rem' }}
-          >
-            <span
-              className={`font-semibold ${
-                category === selectedCategory
-                  ? `text-${theme === 'dark' ? 'white' : 'black'} dark:text-${
-                      theme === 'dark' ? 'primary-dark' : 'secondary-dark'
-                    }`
-                  : 'text-gray-500 dark:text-gray-400'
-              }`}
+        {categories &&
+          Array.isArray(categories) &&
+          categories.length > 0 &&
+          categories.map((category) => (
+            <ToggleButton
+              key={category}
+              value={category}
+              className={`toggle-btn flex justify-center items-center border border-${
+                theme === 'dark' ? 'gray-700' : 'gray-300 w-full'
+              } rounded-md`}
+              style={{ height: '5rem' }}
             >
-              {category}
-            </span>
-          </ToggleButton>
-        ))}
+              <span
+                className={`font-semibold ${
+                  category === selectedCategory
+                    ? `text-${theme === 'dark' ? 'white' : 'black'} dark:text-${
+                        theme === 'dark' ? 'primary-dark' : 'secondary-dark'
+                      }`
+                    : 'text-gray-500 dark:text-gray-400'
+                }`}
+              >
+                {category}
+              </span>
+            </ToggleButton>
+          ))}
       </ToggleButtonGroup>
     </motion.div>
   );

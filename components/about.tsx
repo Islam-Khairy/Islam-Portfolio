@@ -29,7 +29,7 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
 
-      <div className='about-container flex flex-col lg:flex-row justify-between items-start gap-4'>
+      <div className='about-container flex flex-col lg:flex-row items-start'>
         <div className='about-animation w-full lg:w-1/2 flex justify-center items-center lg:items-start max-w-full'>
           <main className='relative w-full h-screen'>
             <Spline

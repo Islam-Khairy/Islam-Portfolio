@@ -35,6 +35,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className='!scroll-smooth'
     >
       <head>
+        <meta
+          name='google-site-verification'
+          content='YMyU0ORs8KhU7srb9dRv7N-io1dxaXqajvhKRdxcWGU'
+        />
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
       </head>
       <body className='font-style dark:bg-gradient-to-b from-[#0f172a] to-[#131a28] bg-[radial-gradient(circle, #ffffff, #f9f5f0)] dark:text-gray-50 text-gray-950 dark:text-opacity-90 relative'>

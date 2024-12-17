@@ -121,7 +121,7 @@ export default function Home() {
               ? 'border-gray-400 dark:border-gray-500'
               : 'border-gray-700 border-opacity-40'
           } text-gray-950 dark:text-gray-200`}
-          href='https://drive.google.com/file/d/1oz3voSkVkvJ9LJqjcQd6SjzR3OVEsPwh/view?usp=drive_link'
+          href='https://drive.google.com/file/d/1jPsdTe3ZGOYjJrRaU0s_o0trE5gHZMQv/view'
           target='_blank'
           rel='noopener noreferrer'
         >

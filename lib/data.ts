@@ -69,7 +69,7 @@ export const projectsData = [
 export const experiencesData = [
   {
     title: 'Front-End Web Developer',
-    location: 'Freelancer',
+    location: 'Freelance',
     description:
       'Developed responsive and interactive web interfaces for diverse projects using React and Next.js. Focused on delivering high-quality, user-friendly designs while ensuring performance optimization and meeting project deadlines.',
     icon: React.createElement(CgWorkAlt),
@@ -79,9 +79,9 @@ export const experiencesData = [
     title: 'Front-End Web Developer',
     location: 'Dr.Code for Ultimate Software Solutions',
     description:
-      'Worked on multiple projects, including e-commerce, medical, and educational platforms, building responsive and performance-optimized interfaces using modern technologies such as React and Next.js, and Tailwind CSS. Collaborated with backend teams to integrate APIs, and ensured a seamless user experience across various devices and platforms.',
+      'Worked on multiple projects, including e-commerce, medical, and educational platforms, building responsive and performance-optimized interfaces using modern technologies such as React, Next.js, and Tailwind CSS. Collaborated with backend teams to integrate APIs, and ensured a seamless user experience across various devices and platforms.',
     icon: React.createElement(CgWorkAlt),
-    date: 'August 2023 - Present',
+    date: 'August 2024 - Present',
   },
 ] as const;
 

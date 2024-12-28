@@ -43,18 +43,19 @@ export default function About() {
           <p className='about-text text-lg font-medium leading-relaxed text-left'>
             Greetings! Allow me to introduce myself. My name is Islam Khairy. 👋 I'm a dedicated web
             developer with a passion for crafting exceptional digital experiences. With a solid
-            foundation in HTML, CSS, and JavaScript, I thrive on bringing ideas to life through
+            foundation in HTML, CSS, and JavaScript, I excel at bringing ideas to life through
             clean, efficient code.
             <br /> <br />
-            I've refined my skills in front-end technologies like React.js, Next.js, and TypeScript,
-            striving to enhance both the visual appeal and functionality of each project I work on.
-            I believe web development goes beyond just writing code – it's about understanding user
+            I've refined my skills in front-end technologies like React, Next.js, and TypeScript,
+            dedicated to enhancing both the design and functionality of each project I work on. I
+            believe web development goes beyond just writing code – it's about understanding user
             needs, solving problems creatively, and delivering solutions that leave a lasting
             impression.
             <br /> <br />
-            While I'm currently focused on front-end work, I'm eager to delve deeper into the world
-            of web development. Whether it's mastering back-end languages, exploring databases, or
-            tackling server-side scripting, I'm always up for a challenge.
+            While my current focus is on front-end development, I'm keen to broaden my knowledge in
+            various aspects of web development. From gaining proficiency in back-end technologies
+            and delving into databases to engaging in server-side programming, I am passionate about
+            taking on new challenges and continuously learning.
             <br /> <br />
             I'm excited to connect with like-minded developers, collaborate on exciting projects,
             and continue growing as a developer.

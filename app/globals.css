@@ -67,11 +67,13 @@ section {
   background: #888;
 } */
 
-.greeting-icon,
+/* .greeting-icon,
 .switch-icon,
 .submit-btn,
 .about-animation,
-.header nav a {
+.header nav a 
+ */
+ * {
   -webkit-tap-highlight-color: transparent;
   tap-highlight-color: transparent;
 }

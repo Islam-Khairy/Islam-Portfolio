@@ -229,14 +229,14 @@ export const skillsData = [
     id: uuidv4(),
     name: 'Git',
     icon: 'logos:git-icon',
-    category: 'Version Control & Collaboration',
+    category: 'Tools & Technologies',
   },
   {
     id: uuidv4(),
     name: 'GitHub',
     icon: 'cib:github',
     // icon: 'logos:github-icon',
-    category: 'Version Control & Collaboration',
+    category: 'Tools & Technologies',
   },
   // {
   //   id: uuidv4(),

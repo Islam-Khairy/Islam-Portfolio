@@ -32,7 +32,7 @@ section {
   padding: 0 !important;
 }
 
-.particles-section {
+/* .particles-section {
   position: relative;
   overflow: hidden;
 }
@@ -45,30 +45,17 @@ section {
   bottom: 0 !important;
   width: 100% !important;
   height: 100% !important;
+} */
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 *::-webkit-scrollbar {
-  display: none;
+  display: none; 
 }
 
-/* ::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(204, 204, 204, 0.3);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #888;
-} */
-
-/* .greeting-icon,
-.switch-icon,
-.submit-btn,
-.about-animation,
-.header nav a 
- */
  * {
   -webkit-tap-highlight-color: transparent;
   tap-highlight-color: transparent;

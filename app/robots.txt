@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://islam-portfolio-one.vercel.app/sitemap.xml

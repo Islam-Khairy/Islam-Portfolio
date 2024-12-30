@@ -6,8 +6,8 @@ import { Suspense } from 'react';
 import { Toaster } from 'sonner'
 
 export const metadata = {
-  title: 'Islam Khairy | Web Developer',
-  description: 'Web Developer.',
+  title: 'Islam Khairy | Experienced Web Developer',
+  description: 'Portfolio of Islam Khairy, showcasing web development projects and skills in React, Next.js, and more.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

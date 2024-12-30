@@ -33,7 +33,7 @@ export default function Home() {
             <Image
               src={personalImage}
               loading='lazy'
-              alt='Profile Picture'
+              alt='Islam Khairy Picture'
               quality='100'
               className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl'
             />
@@ -60,7 +60,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi there! I'm <span className='font-bold'>Islam Khairy.</span> a passionate web developer
+        Hi there! I'm <strong>Islam Khairy</strong>, a passionate <strong>web developer </strong>
         who aims to turn ideas into interactive and engaging digital experiences. With a keen eye
         for detail and a love for clean, efficient code.
       </motion.h1>
@@ -102,7 +102,7 @@ export default function Home() {
       >
         <a
           className={`group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition duration-500 cursor-pointer border-2 border-gray-500 text-gray-200`}
-          href='https://drive.google.com/file/d/1ks7HRSN-iYf5QSHAlweQGkTA3DwHnSVG/view?usp=drive_link'
+          href='https://drive.google.com/file/d/13jsM94C3f9E9NwTQqHbyJ8kp709es4fb/view?usp=drive_link'
           target='_blank'
           rel='noopener noreferrer'
         >

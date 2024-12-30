@@ -5,14 +5,12 @@ import { Points, PointMaterial } from '@react-three/drei';
 import * as random from 'maath/random/dist/maath-random.esm';
 import * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
-import { useTheme } from '@/context/theme-context';
 
 export default function Stars() {
   const count = 1000
   const radius = 2.5
-  const { theme } = useTheme();
-  const ref = useRef<THREE.Points>(null);
 
+  const ref = useRef<THREE.Points>(null);
   const sphere = useMemo(() => {
     const points = random.inSphere(new Float32Array(count * 3), { radius });
 
@@ -44,11 +42,11 @@ export default function Stars() {
         >
           <PointMaterial
             transparent
-            color={`${theme === 'dark' ? '#8b9cdf' : '#6b7280'}`}
+            color='#8b9cdf'
             size={0.005}
             sizeAttenuation={true}
             depthWrite={false}
-            opacity={theme === 'dark' ? 0.8 : 0.6}
+            opacity={0.8}
           />
         </Points>
       </group>

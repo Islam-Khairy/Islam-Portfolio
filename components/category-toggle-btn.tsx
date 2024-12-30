@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { motion } from 'framer-motion';
-import { useTheme } from '@/context/theme-context';
 
 interface CategoryToggleButtonProps {
   categories: string[];
@@ -17,7 +16,6 @@ const CategoryToggleButton: React.FC<CategoryToggleButtonProps> = ({
   selectedCategory,
   onChange,
 }) => {
-  const { theme } = useTheme();
   const [orientation, setOrientation] = useState<'horizontal' | 'vertical'>('horizontal');
 
   useEffect(() => {
@@ -56,18 +54,14 @@ const CategoryToggleButton: React.FC<CategoryToggleButtonProps> = ({
             <ToggleButton
               key={category}
               value={category}
-              className={`toggle-btn flex justify-center items-center border border-${
-                theme === 'dark' ? 'gray-700' : 'gray-300 w-full'
-              } rounded-md`}
+              className='toggle-btn flex justify-center items-center border border-gray-700 rounded-md'
               style={{ height: '5rem' }}
             >
               <span
                 className={`font-semibold ${
                   category === selectedCategory
-                    ? `text-${theme === 'dark' ? 'white' : 'black'} dark:text-${
-                        theme === 'dark' ? 'primary-dark' : 'secondary-dark'
-                      }`
-                    : 'text-gray-500 dark:text-gray-400'
+                    ? ` text-primary-dark`
+                    : ' text-gray-400'
                 }`}
               >
                 {category}

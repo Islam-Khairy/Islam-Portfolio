@@ -7,13 +7,10 @@ import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { FaFileDownload } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
-import ParticleContainer from './particle-container';
 import personalImage from '@/public/images/personal.jpg';
-import { useTheme } from '@/context/theme-context';
 
 export default function Home() {
   const { ref } = useSectionInView('Home');
-  const { theme } = useTheme();
 
   return (
     <section
@@ -35,11 +32,9 @@ export default function Home() {
           >
             <Image
               src={personalImage}
+              loading='lazy'
               alt='Profile Picture'
-              width='192'
-              height='192'
               quality='100'
-              priority={true}
               className='h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl'
             />
           </motion.div>
@@ -61,9 +56,7 @@ export default function Home() {
       </div>
 
       <motion.h1
-        className={`mb-4 mt-4 px-0 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl max-w-[50rem] mx-auto ${
-          theme === 'dark' ? 'text-white' : 'text-black'
-        }`}
+        className='mb-4 mt-4 px-0 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl max-w-[50rem] mx-auto text-[#fff]'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -81,11 +74,7 @@ export default function Home() {
         }}
       >
         <a
-          className={`group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition duration-500 cursor-pointer border-2 ${
-            theme === 'dark'
-              ? 'border-gray-400 dark:border-gray-500'
-              : 'border-gray-700 border-opacity-40'
-          } text-gray-950 dark:text-gray-200`}
+          className='group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition duration-500 cursor-pointer border-2 border-gray-500 text-gray-200'
           href='https://github.com/Islam-Khairy'
           target='_blank'
           rel='noopener noreferrer'
@@ -94,11 +83,7 @@ export default function Home() {
         </a>
 
         <a
-          className={`group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition duration-500 cursor-pointer border-2 ${
-            theme === 'dark'
-              ? 'border-gray-400 dark:border-gray-500'
-              : 'border-gray-700 border-opacity-40'
-          } text-gray-950 dark:text-gray-200`}
+          className={`group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition duration-500 cursor-pointer border-2 border-gray-500 text-gray-200`}
           href='https://www.linkedin.com/in/islam-khairy-364793307/'
           target='_blank'
           rel='noopener noreferrer'
@@ -116,11 +101,7 @@ export default function Home() {
         }}
       >
         <a
-          className={`group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition duration-500 cursor-pointer border-2 ${
-            theme === 'dark'
-              ? 'border-gray-400 dark:border-gray-500'
-              : 'border-gray-700 border-opacity-40'
-          } text-gray-950 dark:text-gray-200`}
+          className={`group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition duration-500 cursor-pointer border-2 border-gray-500 text-gray-200`}
           href='https://drive.google.com/file/d/1ks7HRSN-iYf5QSHAlweQGkTA3DwHnSVG/view?usp=drive_link'
           target='_blank'
           rel='noopener noreferrer'

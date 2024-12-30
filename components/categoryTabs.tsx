@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { Tabs, Tab } from '@mui/material';
 import { motion } from 'framer-motion';
-import { useTheme } from '@/context/theme-context';
 
 interface CategoryTabsProps {
   categories: string[];
@@ -12,7 +11,6 @@ interface CategoryTabsProps {
 }
 
 const CategoryTabs: React.FC<CategoryTabsProps> = ({ categories, selectedCategory, onChange }) => {
-  const { theme } = useTheme();
   const [orientation, setOrientation] = useState<'horizontal' | 'vertical'>('horizontal');
 
   const handleChange = (event: React.SyntheticEvent, newCategory: string) => {
@@ -39,43 +37,36 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({ categories, selectedCategor
           orientation={orientation}
           value={selectedCategory}
           onChange={handleChange}
-          centered
           aria-label='skill category tabs'
           variant='scrollable'
           scrollButtons='auto'
-          textColor={theme === 'dark' ? 'primary' : 'secondary'}
-          indicatorColor={theme === 'dark' ? 'primary' : 'secondary'}
+          textColor='primary'
+          indicatorColor='primary'
           TabIndicatorProps={{
             sx: {
-              backgroundColor: theme === 'dark' ? '#ffffff' : '#000000',
+              backgroundColor: '#ffffff',
               transition: '0.3s',
             },
           }}
         >
-          {(categories &&
-          Array.isArray(categories) &&
-          categories.length > 0) && categories.map((category) => (
-            <Tab
-              key={category}
-              value={category}
-              label={category}
-              sx={{
-                textTransform: 'none',
-                borderRadius: '8px',
-                color:
-                  category === selectedCategory
-                    ? theme === 'dark'
-                      ? '#ffffff'
-                      : '#000000'
-                    : theme === 'dark'
-                    ? '#9ca3af'
-                    : '#6b7280',
-                '&.Mui-selected': {
-                  color: theme === 'dark' ? '#ffffff' : '#000000',
-                },
-              }}
-            />
-          ))}
+          {categories &&
+            Array.isArray(categories) &&
+            categories.length > 0 &&
+            categories.map((category) => (
+              <Tab
+                key={category}
+                value={category}
+                label={category}
+                sx={{
+                  textTransform: 'none',
+                  borderRadius: '8px',
+                  color: category === selectedCategory ? '#ffffff' : '#9ca3af',
+                  '&.Mui-selected': {
+                    color: '#ffffff',
+                  },
+                }}
+              />
+            ))}
         </Tabs>
       </div>
     </motion.div>

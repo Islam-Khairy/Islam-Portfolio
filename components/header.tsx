@@ -6,12 +6,10 @@ import { links } from '@/lib/data';
 import Link from 'next/link';
 import clsx from 'clsx';
 import { useActiveSectionContext } from '@/context/active-section-context';
-import { useTheme } from '@/context/theme-context';
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
-  const { theme } = useTheme();
 
   return (
     <header className='header z-[999] relative'>
@@ -32,9 +30,9 @@ export default function Header() {
               >
                 <Link
                   className={clsx(
-                    'px-4 py-2 hover:text-gray-950 transition dark:text-gray-300 dark:hover:text-gray-300',
+                    'px-4 py-2 hover:text-gray-300 transition text-gray-300',
                     {
-                      'text-gray-950 dark:text-white': activeSection === link.name,
+                      'text-gray-white': activeSection === link.name,
                       'hidden lg:block': link.name === 'About',
                     },
                   )}
@@ -48,7 +46,7 @@ export default function Header() {
 
                   {link.name === activeSection && (
                     <motion.span
-                      className='bg-gray-200 bg-opacity-80 rounded-full absolute inset-0 -z-10 dark:bg-gray-800'
+                      className='bg-gray-800 bg-opacity-80 rounded-full absolute inset-0 -z-10'
                       layoutId='activeSection'
                       transition={{
                         type: 'spring',

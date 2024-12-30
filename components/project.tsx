@@ -33,23 +33,23 @@ export default function Project({
     target: ref,
     offset: ['0 1', '1.33 1'],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
     <motion.div
       ref={ref}
       style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
+        scale: scaleProgress,
+        opacity: opacityProgress,
       }}
       className='group mb-3 sm:mb-8 last:mb-0 w-screen flex flex-col justify-center align-center'
     >
-      <section className='project-container max-w-[90%] mx-auto lg:max-w-[58rem] bg-gray-100  border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative lg:min-h-[21rem] hover:bg-gray-200 transition dark:text-white dark:bg-white/10 dark:hover:bg-white/20'>
+      <section className='project-container max-w-[90%] mx-auto lg:max-w-[58rem] bg-gray-100  border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative lg:min-h-[21rem] hover:bg-gray-200 transition text-white bg-white/10 hover:bg-white/20'>
         <div className='pt-4 pb-7 px-5 md:pl-10 md:pr-2 md:pt-10 lg:max-w-[50%] flex flex-col h-full'>
           <h3 className='text-2xl font-semibold mb-4'>{title}</h3>
           <ul className='flex flex-wrap gap-2 mb-3 sm:mt-auto'>
-            <p className='font-bold text-gray-500 dark:text-white/70'>Made with: </p>
+            <p className='font-bold text-gray-500 text-white/70'>Made with: </p>
             {icons &&
               Array.isArray(icons) &&
               icons.length > 0 &&
@@ -61,7 +61,7 @@ export default function Project({
                 />
               ))}
           </ul>
-          <p className='mt-2 leading-relaxed text-gray-700 dark:text-white/70 mb-3'>
+          <p className='mt-2 leading-relaxed text-gray-700 text-white/70 mb-3'>
             {description}
           </p>
           <div className='flex'>
@@ -92,7 +92,7 @@ export default function Project({
                 href={githubLink}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex items-center border border-[#111827] py-2 px-4 rounded-full mr-2 text-[#111827] hover:scale-105 dark:border-white dark:text-white dark:border-opacity-40'
+                className='flex items-center border py-2 px-4 rounded-full mr-2 hover:scale-105 border-white text-white border-opacity-40'
               >
                 <AiFillGithub className='mr-1 opacity-70' />{' '}
                 <span className='opacity-70'>GitHub</span>

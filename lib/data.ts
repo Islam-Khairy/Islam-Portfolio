@@ -122,7 +122,6 @@ export const skillsData = [
     icon: 'logos:c-plusplus',
     category: 'Programming & Markup Languages',
   },
-
   {
     id: uuidv4(),
     name: 'React',
@@ -143,12 +142,6 @@ export const skillsData = [
   },
   {
     id: uuidv4(),
-    name: 'Material-UI',
-    icon: 'logos:material-ui',
-    category: 'Web Development',
-  },
-  {
-    id: uuidv4(),
     name: 'Tailwind CSS',
     icon: 'vscode-icons:file-type-tailwind',
     category: 'Web Development',
@@ -157,6 +150,30 @@ export const skillsData = [
     id: uuidv4(),
     name: 'Bootstrap',
     icon: 'simple-icons:bootstrap',
+    category: 'Web Development',
+  },
+  {
+    id: uuidv4(),
+    name: 'Material-UI',
+    icon: 'logos:material-ui',
+    category: 'Web Development',
+  },
+  {
+    id: uuidv4(),
+    name: 'Framer Motion',
+    icon: 'simple-icons:framer',
+    category: 'Web Development',
+  },
+  {
+    id: uuidv4(),
+    name: 'RESTful APIs',
+    icon: 'ion:cloud-upload-outline',
+    category: 'Web Development',
+  },
+  {
+    id: uuidv4(),
+    name: 'Axios',
+    icon: 'simple-icons:axios',
     category: 'Web Development',
   },
   // {
@@ -186,21 +203,27 @@ export const skillsData = [
   },
   {
     id: uuidv4(),
+    name: 'SEO Best Practices',
+    icon: 'material-symbols:search',
+    category: 'Best Practices',
+  },
+  {
+    id: uuidv4(),
     name: 'Responsive Design',
     icon: 'mdi:responsive',
-    category: 'Web Development',
+    category: 'Best Practices',
   },
   {
     id: uuidv4(),
-    name: 'RESTful APIs',
-    icon: 'ion:cloud-upload-outline',
-    category: 'Web Development',
+    name: 'Cross-Browser Compatibility',
+    icon: 'mdi:web',
+    category: 'Best Practices',
   },
   {
     id: uuidv4(),
-    name: 'Axios',
-    icon: 'simple-icons:axios',
-    category: 'Web Development',
+    name: 'Web Performance Optimization',
+    icon: 'mdi:rocket-launch-outline',
+    category: 'Best Practices',
   },
   {
     id: uuidv4(),

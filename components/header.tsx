@@ -33,7 +33,7 @@ export default function Header() {
                     'px-4 py-2 hover:text-gray-300 transition text-gray-300',
                     {
                       'text-gray-white': activeSection === link.name,
-                      'hidden lg:block': link.name === 'About',
+                      // 'hidden lg:block': link.name === 'About',
                     },
                   )}
                   href={link.hash}

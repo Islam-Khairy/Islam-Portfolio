@@ -51,7 +51,7 @@ export default function Contact() {
     <motion.section
       id='contact'
       ref={ref}
-      className='mb-20 sm:mb-28 w-full max-w-xl mx-auto text-center px-4'
+      className='mb-28 w-full max-w-xl mx-auto text-center px-4'
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -84,9 +84,7 @@ export default function Contact() {
           name='email'
           placeholder='Your email'
           value={inputsData.email}
-          onChange={(e) =>
-            setInputsData({ ...inputsData, email: e.target.value })
-          }
+          onChange={(e) => setInputsData({ ...inputsData, email: e.target.value })}
           required
           className='h-14 px-4 rounded-lg borderBlack bg-white bg-opacity-80 focus:bg-opacity-100 transition-all outline-none'
           maxLength={500}
@@ -95,9 +93,7 @@ export default function Contact() {
           name='message'
           placeholder='Your message'
           value={inputsData.message}
-          onChange={(e) =>
-            setInputsData({ ...inputsData, message: e.target.value })
-          }
+          onChange={(e) => setInputsData({ ...inputsData, message: e.target.value })}
           required
           className='h-52 my-3 rounded-lg borderBlack p-4 bg-white bg-opacity-80 focus:bg-opacity-100 transition-all outline-none resize-none'
           maxLength={5000}

@@ -14,10 +14,10 @@ body {
 html {
   --line-color: rgba(255, 255, 255, 0.2);
 }
-
+/* 
 section {
   width: 100vw !important;
-}
+} */
 
 .font-style {
   font-family: 'Nunito', sans-serif;
@@ -53,10 +53,10 @@ section {
 }
 
 *::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
- * {
+* {
   -webkit-tap-highlight-color: transparent;
   tap-highlight-color: transparent;
 }
@@ -67,7 +67,3 @@ section {
   font-weight: 400;
   font-style: normal;
 }
-
-
-
-

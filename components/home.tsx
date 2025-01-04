@@ -16,7 +16,7 @@ export default function Home() {
     <section
       ref={ref}
       id='home'
-      className={`home-section flex flex-col justify-center items-center min-h-screen mb-16 sm:mb-0 text-center scroll-mt-[100rem] particles-section pt-36 pb-18 w-full px-4`}
+      className={`flex flex-col justify-center items-center text-center scroll-mt-28 sm:mt-16 md:mt-10 lg:mt-0 pt-36 pb-18 w-full px-4`}
       style={{ height: 'auto' }}
     >
       {/* <ParticleContainer theme={theme} /> */}
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       <motion.h1
-        className='mb-4 mt-4 px-0 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl max-w-[50rem] mx-auto text-[#fff]'
+        className='mb-4 mt-4 px-0 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl max-w-[50rem] mx-auto text-white'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >

@@ -14,7 +14,7 @@ export default function Experience() {
     <section
       id='experience'
       ref={ref}
-      className={`scroll-mt-28 sm:mt-16 md:mt-10 lg:mt-0 mb-28 sm:mb-40 px-4`}
+      className={`scroll-mt-32 lg:scroll-mt-28 sm:mt-16 md:mt-10 lg:-mt-44 px-4`}
     >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor={'rgba(255, 255, 255, 0.3)'}>
@@ -33,8 +33,7 @@ export default function Experience() {
                   padding: '1.3rem 2rem',
                 }}
                 contentArrowStyle={{
-                  borderRight:
-                    '0.4rem solid rgba(255, 255, 255, 0.5)',
+                  borderRight: '0.4rem solid rgba(255, 255, 255, 0.5)',
                 }}
                 date={item.date}
                 icon={item.icon}

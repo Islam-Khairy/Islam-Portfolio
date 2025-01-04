@@ -13,7 +13,7 @@ export default function About() {
     <motion.section
       id='about'
       ref={ref}
-      className={`about-section mb-28 scroll-mt-28 w-full px-6 flex-col items-center hidden lg:flex`}
+      className={`scroll-mt-32 lg:scroll-mt-28 w-full px-6 flex flex-col items-center`}
       initial={{
         opacity: 0,
       }}
@@ -30,16 +30,16 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
 
       <div className='about-container flex flex-col lg:flex-row items-start'>
-        <div className='about-animation w-full lg:w-1/2 flex justify-center items-center lg:items-start max-w-full'>
+        <div className='about-animation w-full lg:w-1/2 hidden lg:flex justify-center items-center lg:items-start max-w-full'>
           <main className='relative w-full h-screen'>
             <Spline
               scene='/animations/spline-animation1.spline'
-              className='absolute -top-52 left-0 w-full h-screen'
+              className='absolute -top-52 left-0 w-full h-full'
             />
           </main>
         </div>
 
-        <div className='about-text-container w-full xl:w-1/2 xl:pe-6'>
+        <div className='about-text-container w-full lg:w-1/2 lg:pe-6'>
           <p className='about-text text-lg font-medium leading-relaxed text-left'>
             Greetings! Allow me to introduce myself. My name is Islam Khairy. 👋 I'm a dedicated web
             developer with a passion for crafting exceptional digital experiences. With a solid
